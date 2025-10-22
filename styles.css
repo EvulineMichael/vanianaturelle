@@ -958,6 +958,9 @@ section:first-of-type {
   font-weight: bold;
 }
 
+.whatsapp-contact a {
+  color: red;
+}
 
 .whatsapp-link {
   color: #25d366;
