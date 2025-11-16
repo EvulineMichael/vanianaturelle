@@ -296,6 +296,7 @@ section:first-of-type {
 }
 #home{
     scroll-margin-top: 250px; /* Adjust this value based on your design and preferences */
+    margin-top: -70px; /* adjust until it looks perfect */
 }
 #product-packages{
     scroll-margin-top: 100px; /* Adjust this value based on your design and preferences */
@@ -612,6 +613,7 @@ section:first-of-type {
 
 .order-btn-wrapper {
   margin: 40px 0;
+  text-align: center; /* Center inline elements like links */
 }
 
 .order-btn {
