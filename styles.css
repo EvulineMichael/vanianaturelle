@@ -410,6 +410,28 @@ section:first-of-type {
     padding: 20px;
   }
 }
+@media (max-width: 768px) {
+  .content1 {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+}
+@media (max-width: 768px) {
+  .hero-overlay {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: heroAppear 0.90s ease-out 1s forwards !important;
+  }
+}
+
+@keyframes heroAppear {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
 
 /* Wellness Questions */
 .wellness-questions p {
