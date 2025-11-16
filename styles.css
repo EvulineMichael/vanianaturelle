@@ -389,6 +389,10 @@ section:first-of-type {
     transform: translateY(0);
 }
 @media (max-width: 768px) {
+   .hero-section {
+        height: 60vh; /* Reduce height on mobile */
+        background-position: top; /* Optional: shows more of the face/body */
+    }
   .hero-section h1.typewriter {
     font-size: 1.5rem;
     white-space: normal;
@@ -483,6 +487,22 @@ section:first-of-type {
   color: #34996f;
   font-weight: bold;
 }
+/* Initial Testimonial */
+.testimonial-image {
+    width: 80%;
+    max-width: 400px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+    .testimonial-image {
+        width: 90%;
+        max-width: 300px;
+    }
+}
+
 
 /* Miracell+ Ingredients */
 .miira-highlight {
