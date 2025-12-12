@@ -6,6 +6,7 @@ html, body {
     padding: 0;
     max-width: 100% !important;
     overflow-x: hidden !important;
+    font-weight: bold !important;
 }
 
 
@@ -34,13 +35,6 @@ section:first-of-type {
     }
 }
 
-
-.container {
-    max-width: 300px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
 /* Navbar Styles */
 .navbar {
     position: fixed;
@@ -59,10 +53,12 @@ section:first-of-type {
     align-items: center;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 10px;
 }
 
 .nav-logo img {
-    width: 100px;
+    width: 75px;  /* or 80px if you want it smaller */
+    height: auto;  /* maintain aspect ratio */
 }
 
 .brand {
@@ -325,7 +321,7 @@ section:first-of-type {
 /* For the opening image */
 .hero-section {
     height: 100vh;
-    background: url('https://res.cloudinary.com/dv4ejn3qv/image/upload/v1750415779/Picture_of_Happy_Person_p8vagx.jpg') no-repeat center center/cover;
+    background: url('./public/images/Picture\ of\ Happy\ Person.jpg') no-repeat center center/cover;
     position: relative;
     display: flex;
     align-items: center;
@@ -580,12 +576,22 @@ section:first-of-type {
     font-weight: 700 !important;
 }
 
-.testimonials-section h2, h3{
-    font-size: 2rem;
+.testimonials-section h2 {
+  font-size: 2rem;
   color: #FF0000;
   margin-bottom: 10px;
-  font-weight: normal;
 }
+
+.testimonials-section h3 {
+  font-size: 1.6rem;      /* smaller + tighter */
+  line-height: 1.2;       /* snug spacing */
+  color: #cc0000;         /* softer red, not harsh but matches theme */
+  font-weight: 700;       /* strong + bold */
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+
 
 
 .section-subtitle {
@@ -626,7 +632,9 @@ section:first-of-type {
 
 .testimonial-video video {
   width: 100%;
-  max-width: 600px;
+  max-width: 400px;
+  height: 600px;
+  object-fit: cover;
   margin: 30px auto;
   display: block;
   border-radius: 8px;
