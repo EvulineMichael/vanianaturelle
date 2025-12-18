@@ -321,7 +321,7 @@ section:first-of-type {
 /* For the opening image */
 .hero-section {
     height: 100vh;
-    background: url('./public/images/Picture\ of\ Happy\ Person.jpg') no-repeat center center/cover;
+    background: url('/images/Picture\ of\ Happy\ Person.jpg') no-repeat center center/cover;
     position: relative;
     display: flex;
     align-items: center;
