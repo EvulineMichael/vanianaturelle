@@ -124,6 +124,17 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   });
 
+  const track = document.querySelector('.slides-track');
+  const slides = document.querySelectorAll('.slides-track img');
+  let index = 0;
+
+  function slide() {
+    index = (index + 1) % slides.length;
+    track.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  setInterval(slide, 4500); // slower = premium feel
+
 
 
      document.querySelectorAll('.accordion-button').forEach(button => {
